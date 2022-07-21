@@ -1,0 +1,390 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(240, 220, 220);
+}
+
+/*------------------ header part design--------------------------- */
+.full-body {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.head {
+    height: 500px;
+    width: 1150px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 100px;
+
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.header-details {
+    width: 431px;
+    height: 324px;
+    margin-left: 60px;
+}
+
+.header-title {
+    color: white;
+    margin-top: 100px;
+}
+
+.header-para {
+    color: white;
+}
+
+.btn1 {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: tomato;
+}
+
+.header-img {
+    margin-top: 80px;
+    width: 600px;
+    height: 613px;
+    margin-left: 80px;
+    transition: width 2s;
+
+
+}
+
+.header-img:hover {
+    width: 700px;
+
+}
+
+
+/* ----------------------End of header part---------------------------------*/
+/*-------------------------- main part---------------------- */
+
+
+.main-section {
+    margin-left: 85px;
+    margin-top: 50px;
+    width: 1200px;
+    display: flex;
+
+}
+
+/* --------------------------side nav part--------------------------------- */
+
+.side-nav {
+
+    width: 230px;
+    height: 210px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+
+
+
+}
+
+.navigation-part ul {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.navigation-part ul li {
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+
+.navigation-part a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.navigation-part ul li.nav-color {
+    background-color: tomato;
+}
+
+/* --------------------------End of side nav part--------------------------------- */
+
+/* ------------------------Transfer and grid part--------------------------------------- */
+.blogss {
+    width: 600px;
+    margin-right: 80px;
+
+}
+
+.container {
+    margin-left: 30px;
+    /* margin-right: 60px; */
+    height: 200px;
+    width: 270px;
+    background-color: rgb(245, 224, 224);
+    border-radius: 5px;
+    box-shadow: 5px 10px rgb(241, 234, 234);
+    margin-bottom: 20px;
+
+}
+
+.player {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+
+
+
+}
+
+.player img {
+    width: 120px;
+    height: 100px;
+}
+
+.vs {
+    margin-top: 35px;
+
+}
+
+.country-time {
+    margin-left: 30px;
+}
+
+.time {
+    color: rgb(167, 162, 162);
+}
+
+
+
+
+
+.blogss {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+
+}
+
+
+/*------------------------------------ end of main part ------------------------------*/
+.view-btn {
+    margin-left: 700px;
+    margin-top: 80px;
+    border: 1px solid rgb(214, 207, 207);
+    border-radius: 10px;
+    width: 10%;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: tomato;
+    visibility: hidden;
+}
+
+/* -----------------------------------footer part------------------------------------ */
+.foot-er {
+    text-align: center;
+    margin-top: 100px;
+    background-color: black;
+    height: 350px;
+    color: white;
+    margin-left: -50px;
+    margin-right: -10px;
+
+}
+
+.footer-title {
+    padding: 70px;
+}
+
+hr {
+    margin-bottom: 30px;
+    width: 900px;
+    border: 1px solid #494949;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+
+}
+
+.social-media i {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/*---------------------------- Responsive part/media query---------------------------------------- */
+
+/*-------------------------------------- for small device/mobile---------------------------------- */
+@media only screen and (max-width:576px) {
+
+    .head {
+        flex-direction: column;
+        margin: 0px 0px;
+        height: 800px;
+
+    }
+
+    .header-details {
+        width: 300px;
+        margin-left: 10px;
+
+
+    }
+
+    .header-title {
+        margin-top: 10px;
+
+    }
+
+    .header-img {
+        margin-top: 0;
+        height: 200px;
+        margin-left: 10px;
+    }
+
+    .main-section {
+        flex-direction: column;
+
+    }
+
+    .side-nav {
+        width: none;
+        background-color: white;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        margin-left: 5px;
+    }
+
+    .blogss {
+        margin-left: 10px;
+
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+    .view-btn {
+        margin-left: 100px;
+        margin-top: 4px;
+        width: 150px;
+        visibility: visible;
+    }
+
+    hr {
+        margin-bottom: 30px;
+        width: 300px;
+        border: 1px solid #494949;
+    }
+
+    .footer-nav a {
+
+        margin-right: 10px;
+        margin-left: 20px;
+
+    }
+
+}
+
+/* ---------------------responsive for medium device/tablet--------------------- */
+
+@media only screen and (min-width:576px) and (max-width:992px) {
+
+    .head {
+        display: flex;
+        margin: 0px 0px;
+        height: 800px;
+
+    }
+
+    .header-details {
+        width: 500px;
+        margin-left: 50px;
+
+
+    }
+
+    .header-title {
+        margin-top: 10px;
+
+    }
+
+    .header-img {
+        margin-top: 0;
+        height: 200px;
+        margin-left: 30px;
+    }
+
+    .main-section {
+        flex-direction: column;
+
+    }
+
+    .navigation-part ul {
+        overflow: hidden;
+
+    }
+
+    .navigation-part ul li {
+        display: inline-block;
+        margin-right: 30px;
+
+    }
+
+    .side-nav {
+
+        width: 50%;
+        background-color: rgb(240, 220, 220);
+        border: none;
+    }
+
+    .container {
+        margin-left: 5px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogss {
+        margin-left: 10px;
+
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
+    .view-btn {
+        margin-left: 100px;
+        margin-top: 4px;
+        width: 150px;
+        visibility: visible;
+    }
+
+    hr {
+        margin-bottom: 30px;
+        width: 300px;
+        border: 1px solid #494949;
+    }
+
+    .footer-nav a {
+
+        margin-right: 10px;
+        margin-left: 20px;
+
+    }
+
+}
